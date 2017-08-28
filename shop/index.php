@@ -11,3 +11,4 @@ define('JS_URL','/shop/Home/Public/js/');
 
 //引入tp框架接口文件
 include ("../ThinkPHP/ThinkPHP.php");
+//ceshi
