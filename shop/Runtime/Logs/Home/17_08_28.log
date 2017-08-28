@@ -2352,3 +2352,9 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2017-08-28T18:24:02+08:00 ] 127.0.0.1 /shop/index.php/
+ERR: 无法加载控制器:Index
+
+[ 2017-08-28T18:26:54+08:00 ] 127.0.0.1 /shop/index.php/User/css/style.css
+ERR: 非法操作:css
+
