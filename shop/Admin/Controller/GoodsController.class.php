@@ -14,11 +14,11 @@ class GoodsController extends Controller{
 
     public function tianjia()
     {
-        $this->showlist();
+        $this->display();
     }
 
     public function upd()
     {
-        $this->showlist();
+        $this->display();
     }
 }
