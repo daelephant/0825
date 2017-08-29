@@ -15,6 +15,7 @@ class UserController extends Controller{
     }
     //注册系统
     function register(){
-        echo "注册";
+//        echo "注册";
+        $this->display();
     }
 }
