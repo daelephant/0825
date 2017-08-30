@@ -70,6 +70,7 @@ class GoodsController extends Controller{
 
     public function tianjia()
     {
+        dump($_FILES);exit;
         $goods = new \Model\GoodsModel();
         if(!empty($_POST)){
             if ($goods->create()) {

@@ -145,3 +145,9 @@ ERR: 非法操作:verifyImg0.1315524193383648
 [ 2017-08-30T17:38:22+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/verifyImg0.5601217663589411
 ERR: 非法操作:verifyImg0.5601217663589411
 
+[ 2017-08-30T18:24:14+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/css/mine.css
+ERR: 非法操作:css
+
+[ 2017-08-30T18:25:06+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/css/mine.css
+ERR: 非法操作:css
+
