@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta name="Generator" content="YONGDA v1.0" />
@@ -93,7 +93,7 @@
                 <div class="usBox">
                     <div class="usBox_2 clearfix">
                         <div class="logtitle3"></div>
-                        <form id="yw0" action="__SELF__" method="post">                <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
+                        <form id="yw0" action="/shop/index.php/User/register" method="post">                <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
                                 <tbody>
                                     <tr>
                                         <td style="width:13%; text-align: right;"><label for="User_username" class="required">用户名 
@@ -102,7 +102,7 @@
 
                                         <td style="width:87%;">
                                             <input class="inputBg" size="25" name="username" id="User_username" type="text" value="" />
-                                            <span style="color: #9B410E">{$errorInfo.username}</span>
+                                            <span style="color: #9B410E"><?php echo ($errorInfo["username"]); ?></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -112,14 +112,14 @@
 
                                         <td>
                                             <input class="inputBg" size="25" name="password" id="User_password" type="password" value="" />
-                                            <span style="color: #9B410E">{$errorInfo.password}</span>
+                                            <span style="color: #9B410E"><?php echo ($errorInfo["password"]); ?></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="right"><label for="User_password2">密码确认</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="password2" id="User_password2" type="password" />
-                                            <span style="color: #9B410E">{$errorInfo.password2}</span>
+                                            <span style="color: #9B410E"><?php echo ($errorInfo["password2"]); ?></span>
                                         </td>
 
                                     </tr>
@@ -127,7 +127,7 @@
                                         <td align="right"><label for="User_user_email">邮箱</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="user_email" id="User_user_email" type="text" value="" />
-                                            <span style="color: #9B410E">{$errorInfo.user_email}</span>
+                                            <span style="color: #9B410E"><?php echo ($errorInfo["user_email"]); ?></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -135,14 +135,14 @@
                                         <td align="right"><label for="User_user_qq">qq号码</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="user_qq" id="User_user_qq" type="text" value="" />
-                                            <span style="color: #9B410E">{$errorInfo.user_qq}</span>
+                                            <span style="color: #9B410E"><?php echo ($errorInfo["user_qq"]); ?></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="right"><label for="User_user_tel">手机</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="user_tel" id="User_user_tel" type="text" value="" />
-                                            <span style="color: #9B410E">{$errorInfo.user_tel}</span>
+                                            <span style="color: #9B410E"><?php echo ($errorInfo["user_tel"]); ?></span>
                                         </td>
                                     </tr>
                                     <tr>
