@@ -70,9 +70,25 @@ class GoodsController extends Controller{
 
     public function tianjia()
     {
-        dump($_FILES);exit;
+//        dump($_FILES);exit;
         $goods = new \Model\GoodsModel();
         if(!empty($_POST)){
+//            商品图片处理
+            if($_FILES['goods_pic']['error']===0){
+                $cfg=array(
+                    'rootPath' => './Public/Upload',//对父类重置保存路径属性
+                );
+//                设置附件的存储路径
+                $up = new \Think\Upload($cfg);
+//                上传附件
+//                如果附件上传成功，可以通过uploadOne的返回值查看到附件信息
+//                在服务器存储情况
+                $info = $up->uploadOne($_FILES['goods_pic']);
+                dump($info);
+
+            }
+            exit;
+//            收集表单信息
             if ($goods->create()) {
                 $data=$goods->create();
                 $info = $goods->add($data);
