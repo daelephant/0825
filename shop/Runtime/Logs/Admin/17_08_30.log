@@ -115,3 +115,33 @@ ERR: 非法操作:css
 [ 2017-08-30T16:02:12+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/css/mine.css
 ERR: 非法操作:css
 
+[ 2017-08-30T17:37:28+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.6207688835641096
+ERR: 无法加载控制器:ManagererifyImg0.6207688835641096
+
+[ 2017-08-30T17:37:29+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.3992756976183083
+ERR: 无法加载控制器:ManagererifyImg0.3992756976183083
+
+[ 2017-08-30T17:37:30+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.3380429209781155
+ERR: 无法加载控制器:ManagererifyImg0.3380429209781155
+
+[ 2017-08-30T17:37:41+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.8881759216775567
+ERR: 无法加载控制器:ManagererifyImg0.8881759216775567
+
+[ 2017-08-30T17:37:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.6408735112793909
+ERR: 无法加载控制器:ManagererifyImg0.6408735112793909
+
+[ 2017-08-30T17:37:50+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.711864944367395
+ERR: 无法加载控制器:ManagererifyImg0.711864944367395
+
+[ 2017-08-30T17:37:50+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager%0BerifyImg0.029819482586445956
+ERR: 无法加载控制器:ManagererifyImg0.029819482586445956
+
+[ 2017-08-30T17:38:20+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/verifyImg0.3572429277377982
+ERR: 非法操作:verifyImg0.3572429277377982
+
+[ 2017-08-30T17:38:21+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/verifyImg0.1315524193383648
+ERR: 非法操作:verifyImg0.1315524193383648
+
+[ 2017-08-30T17:38:22+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/verifyImg0.5601217663589411
+ERR: 非法操作:verifyImg0.5601217663589411
+
