@@ -1,0 +1,42 @@
+[ 2017-08-29T07:38:59+08:00 ] 127.0.0.1 /shop/index.php/User/css/style.css
+ERR: 非法操作:css
+
+[ 2017-08-29T07:39:12+08:00 ] 127.0.0.1 /shop/index.php/manager/login
+ERR: 无法加载控制器:Manager
+
+[ 2017-08-29T07:41:42+08:00 ] 127.0.0.1 /shop/index.php/User/css/style.css
+ERR: 非法操作:css
+
+[ 2017-08-29T07:41:52+08:00 ] 127.0.0.1 /shop/index.php/manager/login
+ERR: 无法加载控制器:Manager
+
+[ 2017-08-29T07:44:43+08:00 ] 127.0.0.1 /shop/index.php/home/index/style.css
+ERR: 非法操作:style.css
+
+[ 2017-08-29T07:45:38+08:00 ] 127.0.0.1 /shop/index.php/home/index/style.css
+ERR: 非法操作:style.css
+
+[ 2017-08-29T07:45:40+08:00 ] 127.0.0.1 /shop/index.php/home/index/style.css
+ERR: 非法操作:style.css
+
+[ 2017-08-29T07:45:42+08:00 ] 127.0.0.1 /shop/index.php/home/index/style.css
+ERR: 非法操作:style.css
+
+[ 2017-08-29T07:46:45+08:00 ] 127.0.0.1 /shop/index.php/home/index/index
+ERR: Syntax Error in template "D:/phpStudy/WWW/0825/shop/Home/View\Index\index.html"  on line 405 ".boxCenterList form{display:inline;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-08-29T07:49:49+08:00 ] 127.0.0.1 /shop/index.php/home/index/index
+ERR: Syntax Error in template "D:/phpStudy/WWW/0825/shop/Home/View\Index\index.html"  on line 406 ".boxCenterList form{display:inline;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-08-29T22:25:44+08:00 ] 127.0.0.1 /shop/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2017-08-29T22:28:10+08:00 ] 127.0.0.1 /shop/index.php/home/user/CSS_URL/style.css
+ERR: 非法操作:CSS_URL
+
+[ 2017-08-29T22:28:22+08:00 ] 127.0.0.1 /shop/index.php/home/user/CSS_URL/style.css
+ERR: 非法操作:CSS_URL
+
+[ 2017-08-29T22:30:09+08:00 ] 127.0.0.1 /shop/index.php/home/user/CSS_URLstyle.css
+ERR: 非法操作:CSS_URLstyle.css
+

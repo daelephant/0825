@@ -1,0 +1,9 @@
+[ 2017-08-30T07:21:29+08:00 ] 127.0.0.1 /shop/index.php/Home/User/resiger
+ERR: 非法操作:resiger
+
+[ 2017-08-30T07:31:40+08:00 ] 127.0.0.1 /shop/index.php/home/user/register
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_hobby' cannot be null
+
+[ 2017-08-30T08:20:00+08:00 ] 127.0.0.1 /shop/index.php/home/user/register
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_hobby' cannot be null
+

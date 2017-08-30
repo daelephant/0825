@@ -1,0 +1,42 @@
+[ 2017-08-30T06:46:20+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T06:46:20+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T06:46:25+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T06:46:25+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T06:46:34+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T06:46:35+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:11:43+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:11:43+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:12:34+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:12:34+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:12:41+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/showlist
+ERR: SQLSTATE[28000] [1045] Access denied for user 'elephant'@'localhost' (using password: YES)
+
+[ 2017-08-30T07:20:17+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:20:17+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-08-30T07:21:10+08:00 ] 127.0.0.1 /shop/index.php/Admin/User/resiger
+ERR: 无法加载控制器:User
+
