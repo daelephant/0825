@@ -29,7 +29,8 @@
             <table border="1" width="100%" class="table_a">
                 <tr>
                     <td>商品名称</td>
-                    <td><input type="text" name="goods_name" /></td>
+                    <td><input type="text" name="goods_name" /><span style="color: #9B410E"><?php echo ($errorInfo["goods_name"]); ?></span></td>
+
                 </tr>
                 <!--<tr>-->
                     <!--<td>商品分类</td>-->
@@ -55,15 +56,15 @@
                 <!--</tr>-->
                 <tr>
                     <td>商品价格</td>
-                    <td><input type="text" name="goods_price" /></td>
+                    <td><input type="text" name="goods_price" /><span style="color: #9B410E"><?php echo ($errorInfo["goods_price"]); ?></span></td>
                 </tr>
                 <tr>
                     <td>商品数量</td>
-                    <td><input type="text" name="goods_number" /></td>
+                    <td><input type="text" name="goods_number" /><span style="color: #9B410E"><?php echo ($errorInfo["goods_number"]); ?></span></td>
                 </tr>
                 <tr>
                     <td>商品重量</td>
-                    <td><input type="text" name="goods_weight" /></td>
+                    <td><input type="text" name="goods_weight" /><span style="color: #9B410E"><?php echo ($errorInfo["goods_weight"]); ?></span></td>
                 </tr>
                 <tr>
                     <td>商品详细描述</td>

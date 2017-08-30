@@ -1,0 +1,6 @@
+[ 2017-08-30T15:24:15+08:00 ] 127.0.0.1 /shop/index.php/Index/goods/tianjia
+ERR: 非法操作:goods
+
+[ 2017-08-30T15:24:30+08:00 ] 127.0.0.1 /shop/index.php/Index/Goods/tianjia
+ERR: 非法操作:Goods
+

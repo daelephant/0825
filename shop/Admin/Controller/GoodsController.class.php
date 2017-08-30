@@ -72,16 +72,20 @@ class GoodsController extends Controller{
     {
         $goods = new \Model\GoodsModel();
         if(!empty($_POST)){
-            $info = $goods->add($_POST);
+            if ($goods->create()) {
+                $data=$goods->create();
+                $info = $goods->add($data);
+            }
             if ($info){
 //                $this->redirect(地址分组\控制器\方法，参数，时间间隔，提示信息);
                 $this->redirect('showlist',array(),2,'添加成功');
             }else{
-                $this->redirect('tianjia',array(),2,'添加失败');
+                $this->assign('errorInfo',$goods->getError());
+//                $this->redirect('tianjia',array(),2,'添加失败');
             }
-        }else{
-            $this->display();//展示表单
         }
+        $this->display();//展示表单
+
 //        var_dump($_POST);
 //        1、数组方式添加数据：
 //
