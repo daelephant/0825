@@ -15,7 +15,16 @@ class UserController extends Controller{
     }
     //注册系统
     function register(){
-//        echo "注册";
-        $this->display();
+        $user = D('User');
+//        dump($_POST);
+        if(!empty($_POST)){
+//            把爱好的数组变为字符串
+            $_POST['user_hobby']= implode(',',$_POST['user_hobby']);
+//            var_dump($_POST['user_hobby']);exit;
+            $info = $user->add($_POST);
+            echo $info;
+        }else {
+            $this->display();
+        }
     }
 }
