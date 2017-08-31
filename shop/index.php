@@ -4,6 +4,7 @@ define('APP_DEBUG',true);//设置debug模式一定要放在加载项目之前
 
 
 //给系统静态资源文件请求路径设置常量
+define('SITE_URL','http://www.0825.com/shop/');
 //前台
 define('CSS_URL','/shop/Home/Public/css/');
 define('IMG_URL','/shop/Home/Public/images/');

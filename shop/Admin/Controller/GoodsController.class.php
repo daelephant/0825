@@ -84,13 +84,23 @@ class GoodsController extends Controller{
 //                如果附件上传成功，可以通过uploadOne的返回值查看到附件信息
 //                在服务器存储情况
                 $info = $up->uploadOne($_FILES['goods_pic']);
-                $bigpicname = $up->rootPath.$info['savepath'].$info['savename'];
+                $bigpicname = $up->rootPath.$info['savepath'].$info['savename'];//./Public/Upload/2017-08-31/59a77d81b6e55.png
                 $_POST['goods_big_img'] = substr($bigpicname,2);//去除./
 
 //                给上传好的图片制作缩略图
-//                实例化对象
+//               1、 实例化对象
                 $im = new \Think\Image();
-
+//               2、打开源图片（需要制作缩略图的图片）
+                $im->open($bigpicname);
+//               3、为源图片制作缩略图
+                $im->thumb(125,125);//等比例缩放
+//               4、把制作好的图保存到服务器上
+//                缩略图和原图在同一个目录位置
+//                原图：59a77d81b6e55.png  缩略图：small_59a77d81b6e55.png
+                $smallpicname = $up->rootPath.$info['savepath']."small_".$info['savename'];
+                $im->save($smallpicname);
+//               5、把缩略图的路径保存到数据库中
+                $_POST['goods_small_img'] = substr($smallpicname,2);//去除./
             }
 //            dump($_POST);exit;
 //            收集表单信息

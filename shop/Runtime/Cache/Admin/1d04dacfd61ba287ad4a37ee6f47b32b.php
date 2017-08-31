@@ -49,8 +49,8 @@
                         <td><a href="#"><?php echo ($vo["goods_name"]); ?></a></td>
                         <td><?php echo ($vo["goods_number"]); ?></td>
                         <td><?php echo ($vo["goods_price"]); ?></td>
-                        <td><img src="<?php echo ADMIN_IMG_URL; ?>20121018-174034-58977.jpg" height="60" width="60"></td>
-                        <td><img src="<?php echo ADMIN_IMG_URL; ?>20121018-174034-97960.jpg" height="40" width="40"></td>
+                        <td><img src="<?php echo SITE_URL; echo ($vo["goods_big_img"]); ?>" height="60" width="60"></td>
+                        <td><img src="/shop/<?php echo ($vo["goods_small_img"]); ?>" height="40" width="40"></td>
                         <td><?php echo ($vo["goods_brand_id"]); ?></td>
                         <td><?php echo ($vo["goods_create_time"]); ?></td>
                         <td><a href="/shop/index.php/Admin/Goods\upd\goods_id\<?php echo ($vo["goods_id"]); ?>">修改</a></td>
