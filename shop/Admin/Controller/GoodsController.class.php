@@ -76,7 +76,7 @@ class GoodsController extends Controller{
 //            商品图片处理
             if($_FILES['goods_pic']['error']===0){
                 $cfg=array(
-                    'rootPath' => './Public/Upload',//对父类重置保存路径属性
+                    'rootPath' => './Public/Upload/',//对父类重置保存路径属性
                 );
 //                设置附件的存储路径
                 $up = new \Think\Upload($cfg);
@@ -84,10 +84,15 @@ class GoodsController extends Controller{
 //                如果附件上传成功，可以通过uploadOne的返回值查看到附件信息
 //                在服务器存储情况
                 $info = $up->uploadOne($_FILES['goods_pic']);
-                dump($info);
+                $bigpicname = $up->rootPath.$info['savepath'].$info['savename'];
+                $_POST['goods_big_img'] = substr($bigpicname,2);//去除./
+
+//                给上传好的图片制作缩略图
+//                实例化对象
+                $im = new \Think\Image();
 
             }
-            exit;
+//            dump($_POST);exit;
 //            收集表单信息
             if ($goods->create()) {
                 $data=$goods->create();

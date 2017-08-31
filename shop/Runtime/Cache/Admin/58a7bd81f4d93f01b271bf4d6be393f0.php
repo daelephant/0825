@@ -26,7 +26,7 @@
             <!--<form action="/shop/index.php/Admin/Goods\tianjia" method="post" enctype="multipart/form-data">-->
             <!--模板相对路径-->
             <!--<form action="/shop/index.php/Admin/Goods/tianjia" method="post" enctype="multipart/form-data">-->
-            <table border="" width="100%" class="table_a">
+            <table border="1" width="100%" class="table_a">
                 <tr>
                     <td>商品名称</td>
                     <td><input type="text" name="goods_name" /><span style="color: #9B410E"><?php echo ($errorInfo["goods_name"]); ?></span></td>
