@@ -17,7 +17,7 @@
                         <li class="user_top_c"></li>
                         <li class="user_top_r"></li></ul>
                 </dd><dd id="user_main">
-                    <form action="/shop/index.php/Admin/manager/login" method="post">
+                    <form action="/shop/index.php/Admin/Manager/login.html" method="post">
                         <ul>
                             <li class="user_main_l"></li>
                             <li class="user_main_c">
@@ -38,6 +38,7 @@
                                             <input class="TxtValidateCodeCssClass" id="captcha" name="captcha" type="text">
                                             <img src="/shop/index.php/Admin/Manager\verifyImg"  onclick="this.src='/shop/index.php/Admin/Manager/verifyImg/'+Math.random()" alt="" />
                                         </li>
+                                        &nbsp;&nbsp;<li style="color: #880000"><?php echo ($captcha); ?></li>
                                     </ul>
                                 </div>
                             </li>

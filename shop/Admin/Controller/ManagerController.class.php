@@ -18,9 +18,33 @@ class ManagerController extends Controller{
             $vry = new Verify();
 //            if($_POST['captcha']==$_SESSION[名称])
             if ($vry->check($_POST['captcha'])){
-                echo "验证码正确";
+//                echo "验证码正确";
+
+//                开始验证用户名、密码
+//                dump($_POST);exit;
+                $userpwd = array(
+                    'mg_name'=>$_POST['admin_user'],
+                    'mg_pwd' =>$_POST['admin_psd'],
+                );
+//                对数据操作，对用户名和密码进行校验
+//                成功：把用户名和密码所在的记录信息都返回给$info
+//                失败:接收到null信息
+                $info=D('Manager')->where($userpwd)->find();
+
+                if ($info){
+//                    session持久化用户信息(名字、id),页面跳转
+                    session('admin_name',$info['mg_name']);
+                    session('admin_id',$info['mg_id']);
+                    $this->redirect('Index/index');
+                }else{
+//                    echo "用户名或密码错误";
+                    $captcha="用户名或密码错误";
+                    $this->assign('captcha',$captcha);
+                }
+
             }else{
-                echo "验证码错误";
+                $captcha="验证码错误";
+                $this->assign('captcha',$captcha);
             }
         }
         $this->display();
@@ -37,5 +61,11 @@ class ManagerController extends Controller{
 //       实例化Vertify类对象
         $very = new \Think\Verify($cfg);
         $very->entry();
+    }
+//    退出系统
+    function logout(){
+        //清楚session、跳转到Manager/login
+        session(null);
+        $this->redirect('Manager/login');
     }
 }

@@ -62,7 +62,22 @@ class GoodsController extends Controller{
 //        3、只能用having:查询一条总数量大于3的商品信息：
 //        $info = $goods->query('select goods_brand_id,count(*) as cnt from sw_goods HAVING cnt > 3;');
 //        使用where会报错：SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cnt' in 'where clause'
-        $info = $goods->select();
+
+//        实现数据分页效果
+//        1、获得总条数、每页显示条数设置
+        $cnt = $goods->count();//获得总条数  sum() max() avg() min()
+//        拼接SQL语句：SELECT COUNT(*) AS tp_count FROM sw_goods LIMIT 1
+        $per = 7;
+//        2、实例化分页类对象
+        $page_obj = new \Tools\Page($cnt,$per);
+//        3、制作一条SQL语句，获得每页显示的数据
+//        $page_obj->limit:分页工具类会根据当前页码把  limit偏移量，长度  给拼装好并赋值给limit成员属性
+        $sql = "select * from sw_goods ORDER BY goods_id DESC ".$page_obj->limit;
+        $info = $goods->query($sql);
+//        制作页码列表
+        $pagelist = $page_obj->fpage(array(3,4,5,6,7,8));//对应父类的fpage方法的八种成员属性，自行设置
+
+        $this->assign('pagelist',$pagelist);
         $this->assign('info',$info);
 
         $this->display();

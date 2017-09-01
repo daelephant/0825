@@ -59,7 +59,7 @@
 
                     <tr>
                         <td colspan="20" style="text-align: center;">
-                            [1]
+                            <?php echo ($pagelist); ?>
                         </td>
                     </tr>
                 </tbody>

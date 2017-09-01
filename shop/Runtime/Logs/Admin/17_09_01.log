@@ -1,0 +1,6 @@
+[ 2017-09-01T09:51:13+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-01T09:51:13+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
