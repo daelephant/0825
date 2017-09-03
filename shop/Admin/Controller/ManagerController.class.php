@@ -7,10 +7,10 @@
  */
 //后台管理员控制器
 namespace Admin\Controller;
-use Think\Controller;
+use Tools\AdminController;
 use Think\Verify;
 
-class ManagerController extends Controller{
+class ManagerController extends AdminController{
     function login(){
 //        echo "管理员登录系统";
         if (!empty($_POST)){

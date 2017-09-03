@@ -7,10 +7,10 @@
  */
 namespace Admin\Controller;
 use Model\GoodsModel;
-use Think\Controller;
+use Tools\AdminController;
 use Think\Model;
 
-class GoodsController extends Controller{
+class GoodsController extends AdminController{
     function showlist(){
         //对goods的model进行操作
         //实例化model对象

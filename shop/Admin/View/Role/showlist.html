@@ -46,7 +46,7 @@
         </tr>
         <foreach name="info" item="vo">
             <tr id="product1">
-                <td>{$vo.role_id}</td>
+                <td>{$vo[role_id]}</td>
                 <td><a href="#">{$vo.role_name}</a></td>
 
                 <td>{$vo.role_auth_ids}</td>
@@ -55,9 +55,9 @@
                 <!--<td><img src="/shop/{$vo.goods_small_img}" height="40" width="40"></td>-->
                 <!--<td>{$vo.goods_brand_id}</td>-->
                 <!--<td>{$vo.goods_create_time}</td>-->
-                <td><a href="__CONTROLLER__\upd\goods_id\{$vo.goods_id}">分配权限</a></td>
-                <td><a href="__CONTROLLER__\upd\goods_id\{$vo.goods_id}">修改</a></td>
-                <td><a href="javascript:;" onclick="delete_product(1)">删除</a></td>
+                <td><a href="__CONTROLLER__\distribute\role_id\{$vo.role_id}">分配权限</a></td>
+                <td><a href="">修改</a></td>
+                <td><a href="javascript:;" onclick="delete_product({$vo.role_id})">删除</a></td>
             </tr>
         </foreach>
 

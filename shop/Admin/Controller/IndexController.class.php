@@ -6,8 +6,8 @@
  * Time: 17:07
  */
 namespace Admin\Controller;
-use Think\Controller;
-class IndexController extends Controller{
+use Tools\AdminController;
+class IndexController extends AdminController{
     function head(){
         $this->display();
     }

@@ -1,0 +1,81 @@
+[ 2017-09-03T10:25:20+08:00 ] 127.0.0.1 /shop/index.php/Admin/Auth/addAuth
+ERR: 非法操作:addAuth
+
+[ 2017-09-03T10:27:23+08:00 ] 127.0.0.1 /shop/index.php/Admin/Auth/updateAuth/auth_id/50
+ERR: 非法操作:updateAuth
+
+[ 2017-09-03T10:59:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T10:59:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T11:53:38+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T11:53:38+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T11:53:48+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/indexsa
+ERR: 非法操作:indexsa
+
+[ 2017-09-03T11:54:14+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T11:54:14+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T11:54:30+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T11:54:30+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:24:22+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:24:22+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:25:34+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:25:34+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:26:08+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:26:08+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-03T12:26:10+08:00 ] 127.0.0.1 /shop/index.php/Admin/User/comment
+ERR: 无法加载控制器:User
+
+[ 2017-09-03T12:26:13+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2017-09-03T12:26:44+08:00 ] 127.0.0.1 /shop/index.php/Admin/Order/showlist
+ERR: 无法加载控制器:Order
+
+[ 2017-09-03T12:26:46+08:00 ] 127.0.0.1 /shop/index.php/Admin/Order/search
+ERR: 无法加载控制器:Order
+
+[ 2017-09-03T12:26:50+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/css/mine.css
+ERR: 非法操作:css
+
+[ 2017-09-03T12:26:51+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/category
+ERR: 非法操作:category
+
+[ 2017-09-03T12:26:53+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/css/mine.css
+ERR: 非法操作:css
+
+[ 2017-09-03T12:26:53+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/search
+ERR: 非法操作:search
+
+[ 2017-09-03T12:26:55+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/test
+ERR: 非法操作:test
+
+[ 2017-09-03T12:26:56+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/css/mine.css
+ERR: 非法操作:css
+

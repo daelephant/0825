@@ -45,7 +45,7 @@
             <!--<td align="center">操作</td>-->
         </tr>
         <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr id="product1">
-                <td><?php echo ($vo["role_id"]); ?></td>
+                <td><?php echo ($vo[role_id]); ?></td>
                 <td><a href="#"><?php echo ($vo["role_name"]); ?></a></td>
 
                 <td><?php echo ($vo["role_auth_ids"]); ?></td>
@@ -54,9 +54,9 @@
                 <!--<td><img src="/shop/<?php echo ($vo["goods_small_img"]); ?>" height="40" width="40"></td>-->
                 <!--<td><?php echo ($vo["goods_brand_id"]); ?></td>-->
                 <!--<td><?php echo ($vo["goods_create_time"]); ?></td>-->
-                <td><a href="/shop/index.php/Admin/Role\upd\goods_id\<?php echo ($vo["goods_id"]); ?>">分配权限</a></td>
-                <td><a href="/shop/index.php/Admin/Role\upd\goods_id\<?php echo ($vo["goods_id"]); ?>">修改</a></td>
-                <td><a href="javascript:;" onclick="delete_product(1)">删除</a></td>
+                <td><a href="/shop/index.php/Admin/Role\distribute\role_id\<?php echo ($vo["role_id"]); ?>">分配权限</a></td>
+                <td><a href="">修改</a></td>
+                <td><a href="javascript:;" onclick="delete_product(<?php echo ($vo["role_id"]); ?>)">删除</a></td>
             </tr><?php endforeach; endif; ?>
 
         <tr>

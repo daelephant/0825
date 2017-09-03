@@ -17,7 +17,7 @@
                         <li class="user_top_c"></li>
                         <li class="user_top_r"></li></ul>
                 </dd><dd id="user_main">
-                    <form action="/shop/index.php/Admin/Manager/login.html" method="post">
+                    <form action="/shop/index.php/Admin/Manager/login" method="post">
                         <ul>
                             <li class="user_main_l"></li>
                             <li class="user_main_c">

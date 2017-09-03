@@ -1,0 +1,57 @@
+[ 2017-09-02T08:33:03+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T08:33:03+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T11:34:40+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T11:34:41+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T11:34:55+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2017-09-02T11:54:31+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T11:54:31+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T11:55:02+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T11:55:02+08:00 ] 127.0.0.1 /shop/index.php/Admin/Index/%3Cphp%20echo%20ADMIN_CSS_URL;%20?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-09-02T15:59:25+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/100
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:03:25+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/100
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:03:54+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:04:14+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:04:16+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:04:26+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/100
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:05:46+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:06:46+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:07:31+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
+[ 2017-09-02T16:07:35+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/101
+ERR: XML标签语法错误 : in_array($v.auth_id,$have_auth)
+
