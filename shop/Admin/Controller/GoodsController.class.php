@@ -124,6 +124,7 @@ class GoodsController extends AdminController{
                 $info = $goods->add($data);
             }
             if ($info){
+                $this->makehtml($info);
 //                $this->redirect(地址分组\控制器\方法，参数，时间间隔，提示信息);
                 $this->redirect('showlist',array(),2,'添加成功');
             }else{
@@ -155,7 +156,20 @@ class GoodsController extends AdminController{
 
 
     }
-
+//给商品生成静态页面
+    private function makehtml($goods_id){
+//                 把添加好的商品顺便给生成一个静态页面
+//                前台查看商品详情页面就直接查看该静态页面即可
+        ob_start();
+        //内容输出前台商品详情的模板页面(Home/view/Goods/detail.html)
+        $information = D('Goods')->find($goods_id);
+        $this->assign('vo',$information);
+        $this->display('Home@Goods/detail');
+        $cont = ob_get_contents();
+//                把$cont的内容制作成一个静态文件 ./product/goods_190.html
+        file_put_contents('./product/goods_'.$goods_id.'.html',$cont);
+        ob_end_clean();//关闭、清空php缓冲区
+    }
     public function upd($goods_id)//upd每次请求的时候要传递goods_id参数，如果没有，禁止访问
     {
           $goods = new \Model\GoodsModel();
@@ -163,6 +177,7 @@ class GoodsController extends AdminController{
         if (!empty($_POST)){
             $info = $goods->save($_POST);
             if ($info){
+                $this->makehtml($goods_id);
                 $this->redirect('showlist',array('title'=>'success'),2,'修改成功!');
             }else{
                 $this->redirect('upd',array('goods_id'=>$goods_id),2,'修改失败!');

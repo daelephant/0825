@@ -264,8 +264,8 @@
                         <form name="compareForm" action="compare.php" method="post" onsubmit="return compareGoods(this);">
                             <div class="clearfix goodsBox" style="border: medium none; padding: 11px 0pt 10px 5px;">
                                 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><div class="goodsItem">
-                                    <a href="#"><img src="<?php echo IMG_URL; echo ($vo["goods_big_img"]); ?>" alt="诺基亚N85" class="goodsimg"></a><br />
-                                    <p><a href="#" title="诺基亚N85"><?php echo ($vo["goods_name"]); ?></a></p>
+                                    <a href="#"><img src="<?php echo IMG_URL; echo ($vo["goods_big_img"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>" class="goodsimg"></a><br />
+                                    <p><a href="<?php echo SITE_URL; ?>product/goods_<?php echo ($vo["goods_id"]); ?>.html"  title="<?php echo ($vo["goods_name"]); ?>"><?php echo ($vo["goods_name"]); ?></a></p>
                                     <font class="market_s"><?php echo ($vo["goods_price"]); ?></font><br />
                                     <font class="shop_s"><?php echo ($vo["goods_price"]); ?></font><br />
                                     <a href="#"><img src="<?php echo IMG_URL; ?>goumai.gif"></a> &nbsp;&nbsp;&nbsp;&nbsp;

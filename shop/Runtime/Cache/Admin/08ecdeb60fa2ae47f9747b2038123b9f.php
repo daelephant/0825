@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta name="Generator" content="YONGDA v1.0" />
@@ -87,7 +87,7 @@
         <div class="block box">
             <div class="blank"></div>
             <div id="ur_here">
-                当前位置: <a href="#">首页</a> <code>&gt;</code> <a href="#">手机类型</a> <code>&gt;</code> <a href="#">GSM手机</a> <code>&gt;</code> {$vo.goods_name}
+                当前位置: <a href="#">首页</a> <code>&gt;</code> <a href="#">手机类型</a> <code>&gt;</code> <a href="#">GSM手机</a> <code>&gt;</code> <?php echo ($vo["goods_name"]); ?>
             </div>
         </div>
         <div class="blank"></div>
@@ -136,7 +136,7 @@
                         <a style="position: relative; display: block; outline: 0pt none; text-decoration: none; width: 310px; -moz-user-select: none;" href="<?php echo IMG_URL; ?>/200905/goods_img/9_P_1241511871575.jpg" id="zoom1" class="MagicZoom MagicThumb" title="诺基亚E66">
                             <img id="sim806035" src="<?php echo IMG_URL; ?>/9_G_1241511871574.jpg" alt="诺基亚E66" height="310px" width="310px;" />
                             <div class="MagicZoomBigImageCont" style="width: 200px; height: 269px; overflow: hidden; z-index: 100; visibility: visible; position: absolute; top: -10000px; left: 327px; display: block;" id="bc806035">
-                                <div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px;" id="MagicZoomHeaderbc806035" class="MagicZoomHeader">{$vo.goods_name}
+                                <div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px;" id="MagicZoomHeaderbc806035" class="MagicZoomHeader"><?php echo ($vo["goods_name"]); ?>
                                 </div>
                                 <div style="overflow: hidden;">
                                     <img style="position: relative; border-width: 0px; padding: 0px; left: 0px; top: 0px; display: block; visibility: visible;" src="<?php echo IMG_URL; ?>/9_P_1241511871575.jpg" />
@@ -169,7 +169,7 @@
                     <div class="textInfo">
                         <form action="javascript:addToCart(9)" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
                             <div class="clearfix" style="font-size: 14px; font-weight: bold; padding-bottom: 8px;">
-                                {$vo.goods_name}
+                                <?php echo ($vo["goods_name"]); ?>
                             </div>
                             <ul>
                                 <li class="clearfix">
@@ -180,24 +180,24 @@
                                 <li class="clearfix">
                                     <dd>
                                         <strong>商品库存：</strong>
-                                        {$vo.goods_number} 台
+                                        <?php echo ($vo["goods_number"]); ?> 台
                                     </dd>
                                 </li>
 
                                 <li class="clearfix">
                                     <dd>
-                                        <strong>商品品牌：</strong><a href="#">{$vo.goods_name}</a>
+                                        <strong>商品品牌：</strong><a href="#"><?php echo ($vo["goods_name"]); ?></a>
                                     </dd>
                                 </li>
 
                                 <li class="clearfix">
                                     <dd>
-                                        <strong>商品重量：</strong>{$vo.goods_weight}克
+                                        <strong>商品重量：</strong><?php echo ($vo["goods_weight"]); ?>克
                                     </dd>
                                 </li>
                                 <li class="clearfix">
                                     <dd>
-                                        <strong>上架时间：</strong>{$vo.goods_creat_time}
+                                        <strong>上架时间：</strong><?php echo ($vo["goods_creat_time"]); ?>
                                     </dd>
                                 </li>
                                 <li class="clearfix">
@@ -208,9 +208,9 @@
                                     <dd>
                                         <strong>市场价格：</strong><font class="market">￥2758元</font><br />
 
-                                        <strong>本店售价：</strong><font class="shop" id="ECS_SHOPPRICE">￥{$vo.goods_price}元</font><br />
-                                        <strong>注册用户：</strong><font class="shop" id="ECS_RANKPRICE_1">￥{$vo.goods_price}元</font><br />
-                                        <strong>vip：</strong><font class="shop" id="ECS_RANKPRICE_2">￥{$vo.goods_price}元</font><br />
+                                        <strong>本店售价：</strong><font class="shop" id="ECS_SHOPPRICE">￥<?php echo ($vo["goods_price"]); ?>元</font><br />
+                                        <strong>注册用户：</strong><font class="shop" id="ECS_RANKPRICE_1">￥<?php echo ($vo["goods_price"]); ?>元</font><br />
+                                        <strong>vip：</strong><font class="shop" id="ECS_RANKPRICE_2">￥<?php echo ($vo["goods_price"]); ?>元</font><br />
                                     </dd>
                                 </li>
                                 <li class="clearfix">

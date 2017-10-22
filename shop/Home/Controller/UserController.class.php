@@ -47,4 +47,8 @@ class UserController extends Controller{
         $this->display();//展示，一进来就要展示
 
     }
+//    感知用户是否登录系统
+    function loginCheck(){
+        echo "欢迎您elephant";
+    }
 }

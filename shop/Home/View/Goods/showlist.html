@@ -265,8 +265,8 @@
                             <div class="clearfix goodsBox" style="border: medium none; padding: 11px 0pt 10px 5px;">
                                 <foreach name="info" item="vo">
                                 <div class="goodsItem">
-                                    <a href="#"><img src="<?php echo IMG_URL; ?>{$vo.goods_big_img}" alt="诺基亚N85" class="goodsimg"></a><br />
-                                    <p><a href="#" title="诺基亚N85">{$vo.goods_name}</a></p>
+                                    <a href="#"><img src="<?php echo IMG_URL; ?>{$vo.goods_big_img}" alt="{$vo.goods_name}" class="goodsimg"></a><br />
+                                    <p><a href="<?php echo SITE_URL; ?>product/goods_{$vo.goods_id}.html"  title="{$vo.goods_name}">{$vo.goods_name}</a></p>
                                     <font class="market_s">{$vo.goods_price}</font><br />
                                     <font class="shop_s">{$vo.goods_price}</font><br />
                                     <a href="#"><img src="<?php echo IMG_URL; ?>goumai.gif"></a> &nbsp;&nbsp;&nbsp;&nbsp;
