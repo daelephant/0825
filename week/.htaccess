@@ -1,0 +1,15 @@
+#开启重写(伪静态)开关
+RewriteEngine on
+
+RewriteRule ^order\.xml$ order\.php
+
+#cat_567.html   >>>  cat.php?id=567
+#()是正则模式单元内容
+#$1表示重复使用第一个括号内容
+
+RewriteRule ^cat_(\d+)\.html$ cat\.php?id=$1
+
+#访问：http://web.0710.com/week/dog_567_wangcai_beijing.xml
+# 真实指向地址：
+# http://web.0710.com/week/dog.php?id=567&name=wangcai&addr=beijing
+RewriteRule ^dog_(\d+)_([a-z]+)_([a-z]+)\.xml$ dog\.php?id=$1&name=$2&addr=$3
