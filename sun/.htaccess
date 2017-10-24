@@ -1,0 +1,26 @@
+#开启重写(伪静态)开关
+RewriteEngine on
+#访问：http:www.0825.com/sun/a.php
+#真实指向地址：http://web.0901.com/sun/a.php
+# 访问0710域名的时候   会自动 跳转到0609的域名去
+
+#如果访问的地址是以www.0825.com开始的
+#RewriteCond %{HTTP_HOST} ^www.0825.com
+#需要跳转到www.0901.com域名访问   (.*)代表除主机域名之外的信息
+#RewriteRule ^(.*) http://www.0901.com/sun/$1
+
+
+
+
+RewriteRule ^order\.xml$ order\.php
+
+#cat_567.html   >>>  cat.php?id=567
+#()是正则模式单元内容
+#$1表示重复使用第一个括号内容
+
+RewriteRule ^cat_(\d+)\.html$ cat\.php?id=$1
+
+#访问：http://web.0710.com/week/dog_567_wangcai_beijing.xml
+# 真实指向地址：
+# http://web.0710.com/week/dog.php?id=567&name=wangcai&addr=beijing
+RewriteRule ^dog_(\d+)_([a-z]+)_([a-z]+)\.xml$ dog\.php?id=$1&name=$2&addr=$3

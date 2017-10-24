@@ -10,6 +10,7 @@ use Think\Controller;
 class UserController extends Controller{
     //登录系统
     function login(){
+        dump($_GET);
 //        echo "登录";
           $this->display();
     }
