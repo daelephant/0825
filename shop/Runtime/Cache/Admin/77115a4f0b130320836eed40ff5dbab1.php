@@ -41,14 +41,15 @@
                     </table>
                     <table id=child<?php echo ($v["auth_id"]); ?> style="display: none" cellspacing=0 cellpadding=0
                            width=150 border=0>
-                        <?php if(is_array($auth_infoB)): foreach($auth_infoB as $key=>$vv): if($vv['auth_pid'] == $v['auth_id']): ?><!--<if condition='$vv[auth_pid] eq $v[auth_id]'>-->
+                        <?php if(is_array($auth_infoB)): foreach($auth_infoB as $key=>$vv): ?><!--变量与变量的比较必须用[],单独的用.和[]都可以-->
+                            <?php if($vv['auth_pid'] == $v['auth_id']): ?><!--<if condition='$vv[auth_pid] eq $v[auth_id]'>-->
                             <!--{if $vv.auth_pid==$v.auth_id}-->
                         <tr height=20>
                             <td align=middle width=30><img height=9 
                                                            src="<?php echo ADMIN_IMG_URL; ?>menu_icon.gif" width=9></td>
                             <td><a class=menuchild 
-                                   href="#" 
-                                   target=main><?php echo ($vv["auth_name"]); ?></a></td></tr>
+                                   href="/shop/index.php/Admin/<?php echo ($vv["auth_c"]); ?>/<?php echo ($vv["auth_a"]); ?>"
+                                   target=right><?php echo ($vv["auth_name"]); ?></a></td></tr>
 
 
 

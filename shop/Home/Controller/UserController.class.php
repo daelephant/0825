@@ -47,4 +47,9 @@ class UserController extends Controller{
         $this->display();//展示，一进来就要展示
 
     }
+
+//    校验用户名
+    function checkNM($name){
+
+    }
 }

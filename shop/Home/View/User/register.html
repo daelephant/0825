@@ -95,14 +95,39 @@
                         <div class="logtitle3"></div>
                         <form id="yw0" action="__SELF__" method="post">                <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
                                 <tbody>
+<script type="text/javascript">
+    <!--ajax方式验证用户名-->
+    function checkname() {
+        //1、获取用户输入的用户名信息
+        var nm = document.getElementById('User_username').value;
+        if (nm==""){
+            document.getElementById('username_result').innerHTML = "";
+            return false;
+        }
+        //2、ajax具体实现
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4){
+                document.getElementById('username_result').innerHTML = xhr.responseText;
+            }
+        }
+        //TP框架所有需求都要通过“控制器-操作方法”实现
+        xhr.open('get','__CONTROLLER__/checkNM/name'+nm);
+        xhr.send(null);
+
+    }
+
+</script>
                                     <tr>
                                         <td style="width:13%; text-align: right;"><label for="User_username" class="required">用户名 
                                         <span class="required">*</span></label>
                                         </td>
 
                                         <td style="width:87%;">
-                                            <input class="inputBg" size="25" name="username" id="User_username" type="text" value="" />
-                                            <span style="color: #9B410E">{$errorInfo.username}</span>
+                                            <input class="inputBg" size="25" name="username" id="User_username" type="text" value=""
+                                                    onblur="checkname()"
+                                            />
+                                            <span id="username_result" style="color: #9B410E"></span>
                                         </td>
                                     </tr>
                                     <tr>
