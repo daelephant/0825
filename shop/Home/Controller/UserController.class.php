@@ -10,6 +10,7 @@ use Think\Controller;
 class UserController extends Controller{
     //登录系统
     function login(){
+        dump($_GET);
 //        echo "登录";
           $this->display();
     }
@@ -47,9 +48,8 @@ class UserController extends Controller{
         $this->display();//展示，一进来就要展示
 
     }
-
-//    校验用户名
-    function checkNM($name){
-
+//    感知用户是否登录系统
+    function loginCheck(){
+        echo "欢迎您elephant";
     }
 }

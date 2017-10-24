@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta name="Generator" content="YONGDA v1.0" />
@@ -263,16 +263,14 @@
                         </h3>
                         <form name="compareForm" action="compare.php" method="post" onsubmit="return compareGoods(this);">
                             <div class="clearfix goodsBox" style="border: medium none; padding: 11px 0pt 10px 5px;">
-                                <foreach name="info" item="vo">
-                                <div class="goodsItem">
-                                    <a href="#"><img src="<?php echo IMG_URL; ?>{$vo.goods_big_img}" alt="{$vo.goods_name}" class="goodsimg"></a><br />
-                                    <p><a href="<?php echo SITE_URL; ?>product/goods_{$vo.goods_id}.html"  title="{$vo.goods_name}">{$vo.goods_name}</a></p>
-                                    <font class="market_s">{$vo.goods_price}</font><br />
-                                    <font class="shop_s">{$vo.goods_price}</font><br />
+                                <?php if(is_array($info)): foreach($info as $key=>$vo): ?><div class="goodsItem">
+                                    <a href="#"><img src="<?php echo IMG_URL; echo ($vo["goods_big_img"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>" class="goodsimg"></a><br />
+                                    <p><a href="<?php echo SITE_URL; ?>product/goods_<?php echo ($vo["goods_id"]); ?>.html"  title="<?php echo ($vo["goods_name"]); ?>"><?php echo ($vo["goods_name"]); ?></a></p>
+                                    <font class="market_s"><?php echo ($vo["goods_price"]); ?></font><br />
+                                    <font class="shop_s"><?php echo ($vo["goods_price"]); ?></font><br />
                                     <a href="#"><img src="<?php echo IMG_URL; ?>goumai.gif"></a> &nbsp;&nbsp;&nbsp;&nbsp;
                                     <a href="#"><img src="<?php echo IMG_URL; ?>shoucang.gif"></a>
-                                </div>
-                                </foreach>
+                                </div><?php endforeach; endif; ?>
                             </div>
                         </form>
 

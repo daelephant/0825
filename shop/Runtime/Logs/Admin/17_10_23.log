@@ -1,0 +1,6 @@
+[ 2017-10-23T15:33:39+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/tianjia
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'elephant'@'localhost' (using password: YES)
+
+[ 2017-10-23T15:33:42+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/login
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'elephant'@'localhost' (using password: YES)
+

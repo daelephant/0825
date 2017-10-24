@@ -1,0 +1,5 @@
+RewriteEngine On 
+#实现访问www.0910.com开头的域名，都跳转到指定的http://www.0825.com/shop/界面
+RewriteCond %{HTTP_HOST} ^0910.com [NC,OR] 
+RewriteCond %{HTTP_HOST} ^www.0910.com [NC] 
+RewriteRule ^(.*)$ http://www.0825.com/shop/ [L,R=301]
